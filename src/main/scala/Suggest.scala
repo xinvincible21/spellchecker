@@ -53,7 +53,7 @@ class Suggest {
 
     val in = new BufferedReader(new InputStreamReader(System.in))
     while (true) {
-      print("> ")
+      println("> ")
       val line = in.readLine()
       spellChecker.checkSpelling(new StringWordTokenizer(line))
       println()
